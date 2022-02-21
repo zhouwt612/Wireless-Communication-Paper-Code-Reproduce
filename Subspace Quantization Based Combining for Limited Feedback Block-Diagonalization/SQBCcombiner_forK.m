@@ -1,4 +1,6 @@
 function G_SQBC = SQBCcombiner_forK(H,Hhat)
+% This function is for reproduce of "Antenna combiners for block-diagonalization
+% based multi-user MIMO with limited feedback"
 [~,N,K] = size(H);
 G_SQBC = zeros(N,N,K);
 for idx1 = 1:1:K
