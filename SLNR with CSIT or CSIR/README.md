@@ -3,4 +3,5 @@
 该文件主要参考文献为：
 
 [1] M. Sadek, A. Tarighat, and A. H. Sayed, "A Leakage-Based Precoding Scheme for Downlink Multi-User MIMO Channels," IEEE TWC 2007.
+
 [2] M. Sadek, A. Tarighat, and A. H. Sayed, "Active Antenna Selection in Multiuser MIMO Communications," IEEE TSP 2007.
