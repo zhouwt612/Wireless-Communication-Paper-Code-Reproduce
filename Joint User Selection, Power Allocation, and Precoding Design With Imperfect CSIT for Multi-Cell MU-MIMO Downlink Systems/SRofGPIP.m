@@ -1,7 +1,7 @@
 function SR = SRofGPIP(H,F,w,sigma2,P)
 % H: Channel (N x K)
 % F: precoder (N x K)
-[~,K] = size(H);
+[K,N] = size(H);
 SumRate = zeros(1,K);
 interference = zeros(1,K);
 SINR = zeros(1,K);
