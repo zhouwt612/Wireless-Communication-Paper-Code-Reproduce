@@ -1,5 +1,6 @@
-## This code is originally from [Prof. Emil Björnson's github](https://github.com/emilbjornson/optimal-beamforming).
+## This code is originally from [Prof. Emil Björnson's Github](https://github.com/emilbjornson/optimal-beamforming).
 ## Please include this paper in your reference if it helped you😊
+
 
 Optimal Multiuser Transmit Beamforming: A Difficult Problem with a Simple Solution Structure
 ==================
