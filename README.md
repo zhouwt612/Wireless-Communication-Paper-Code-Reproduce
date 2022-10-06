@@ -2,4 +2,5 @@
 ### In this repository, I will continue to upload some meaningful parts for simulation of the reproduced paper.
 
 # Links
-### My friend is working on the paper reproduction as well. Please click [HERE](https://github.com/sangminkim15/reproduced-papers) for details.
+### My friend is working on the paper reproduction as well. I list the links below.
+#### [sangmin](https://github.com/sangminkim15/reproduced-papers)
