@@ -10,7 +10,7 @@ SNR = 10;
 H = sqrt(10^(SNR/10)/2)*(randn(Q*K,P)+1i*randn(Q*K,P));
 B = randn(P,Q*K)+1i*randn(P,Q*K);
 % B = ones(P,Q*K);
-u = 1;
+u = ones(1,K);
 
 BD = B;
 Etx = 1;
@@ -30,7 +30,7 @@ for index = iteration
     % Update W
     for j = 1:1:K
         W(((j-1)*Q+1):j*Q,((j-1)*Q+1):j*Q) = MSEweight(H(((j-1)*Q+1):j*Q,:)...
-            ,B(:,((j-1)*Q+1):j*Q),Rn(:,:,j),u);
+            ,B(:,((j-1)*Q+1):j*Q),Rn(:,:,j),u(j));
     end
     % Update Bmmse
     B = TxWMMSE(H,Ammse,W,Etx);
@@ -52,7 +52,7 @@ for indexD = iteration
     % Update W
     for jD = 1:1:K
         WD(((jD-1)*Q+1):jD*Q,((jD-1)*Q+1):jD*Q) = MSEweightD(H(((jD-1)*Q+1):jD*Q,:)...
-            ,BD(:,((jD-1)*Q+1):jD*Q),RnD(:,:,jD),u);
+            ,BD(:,((jD-1)*Q+1):jD*Q),RnD(:,:,jD),u(j));
     end
     % Update Bmmse
     BD = TxWMMSE(H,AmmseD,WD,Etx);
