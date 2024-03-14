@@ -1,0 +1,1 @@
+I only consider a special case in this simulation, where there are 8 transmit antennas and 4 users each with 2 receive antennas. The simulation code can be extended to other cases by small modifications.
