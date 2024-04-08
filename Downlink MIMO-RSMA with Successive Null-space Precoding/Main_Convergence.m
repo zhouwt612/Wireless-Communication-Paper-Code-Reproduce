@@ -34,5 +34,5 @@ set(gca,'FontSize',11);
 set(gca,'LineWidth',1)
 box on
 grid on
-axis([0 20 0 40])
+axis([0 20 0 50])
 set(gca,'GridLineStyle',':','GridColor','k','GridAlpha',0.5)

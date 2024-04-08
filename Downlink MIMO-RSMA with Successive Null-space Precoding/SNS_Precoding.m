@@ -44,9 +44,9 @@ cvx_begin quiet
     
     Xkcon = cvx(zeros(M,M,K));
     Xkcon(:,:,1) = X1;
-    Xkcon(1:6,1:6,2) = X2;
-    Xkcon(1:4,1:4,3) = X3;
-    Xkcon(1:2,1:2,4) = X4;
+    Xkcon(1:M-N,1:M-N,2) = X2;
+    Xkcon(1:M-2*N,1:M-2*N,3) = X3;
+    Xkcon(1:M-3*N,1:M-3*N,4) = X4;
     
     Qk = cvx(zeros(M,M,K));
     for idx_pre_1 = 1:1:K

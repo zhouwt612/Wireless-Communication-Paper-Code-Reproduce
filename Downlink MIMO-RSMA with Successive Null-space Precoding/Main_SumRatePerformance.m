@@ -11,7 +11,7 @@ M = N*K;
 
 snr = 0:5:30;
 sigma2 = 1;
-Hnum = 100;
+Hnum = 1;
 
 % Estimation error variance
 sigmae = 0.05;
